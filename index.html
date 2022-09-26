@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The setInterval() Method</h2>
+
+<p id="demo">demo</p>
+<p>&nbsp;</p>
+<p>status.txt</p>
+<p>&nbsp;</p>
+<div id="list">
+  <p><iframe src="status.txt" frameborder="0" height="400"
+      width="95%"></iframe></p>
+</div>
+<script>
+const element = document.getElementById("demo");
+setInterval(function() {element.innerHTML = "<p>&nbsp;</p><p>status.txt</p><p>&nbsp;</p><div id=\"list\"><iframe src=\"status.txt\" frameborder=\"0\" height=\"400\"width=\"95%\"></iframe></div>"}, 1000);
+</script>
+
+</body>
+</html>
